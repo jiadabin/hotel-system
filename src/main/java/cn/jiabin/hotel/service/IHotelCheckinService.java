@@ -5,4 +5,6 @@ import org.springframework.data.domain.Pageable;
 
 public interface IHotelCheckinService {
     Object getList(CheckinQueryCriteria queryCriteria, Pageable pageable);
+
+    void checkout(Long id);
 }

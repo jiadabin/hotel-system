@@ -1,6 +1,7 @@
 package cn.jiabin.hotel.controller;
 
 import cn.jiabin.annotation.EnableSysLog;
+import cn.jiabin.base.BaseResult;
 import cn.jiabin.hotel.service.IHotelCheckinService;
 import cn.jiabin.hotel.service.dto.CheckinQueryCriteria;
 import cn.jiabin.utils.PageVo;
@@ -9,9 +10,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("checkin")
@@ -29,5 +28,17 @@ public class HotelCheckinController {
         Pageable pageable = PageRequest.of(pageVo.getPageIndex()-1, pageVo.getPageSize(),
                 Sort.Direction.DESC,"id");
         return new ResponseEntity<>(hotelCheckinService.getList(queryCriteria,pageable), HttpStatus.OK);
+    }
+
+    @EnableSysLog("【后台】退房")
+    @PutMapping("/checkout/{id}")
+    public BaseResult checkout(@PathVariable Long id){
+        if(null==id){
+            return BaseResult.fail("退房失败！");
+        }else {
+            hotelCheckinService.checkout(id);
+            return BaseResult.success("退房成功");
+        }
+
     }
 }

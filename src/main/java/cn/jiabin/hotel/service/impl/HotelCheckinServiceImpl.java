@@ -36,6 +36,12 @@ public class HotelCheckinServiceImpl implements IHotelCheckinService {
         return PageUtil.toPage(page);
     }
 
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public void checkout(Long id) {
+        hotelCheckinRepository.updateStatusById(id);
+    }
+
     /**
      * 添加房间信息到入住列表
      * @param hotelCheckins

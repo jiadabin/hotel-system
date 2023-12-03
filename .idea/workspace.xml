@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09a44c53-9256-4ca4-b0ff-27f171644eb1" name="Changes" comment="Changes" />
+    <list default="true" id="09a44c53-9256-4ca4-b0ff-27f171644eb1" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/jiabin/hotel/controller/HotelCheckinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/jiabin/hotel/controller/HotelCheckinController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/jiabin/hotel/repository/HotelCheckinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/jiabin/hotel/repository/HotelCheckinRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/jiabin/hotel/service/IHotelCheckinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/jiabin/hotel/service/IHotelCheckinService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/jiabin/hotel/service/impl/HotelCheckinServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/jiabin/hotel/service/impl/HotelCheckinServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +74,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Program Files/Git/bin/git.exe",
+    "last_opened_file_path": "D:/IdeaProjects/hotel-system",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -202,7 +208,7 @@
       <workItem from="1701589484538" duration="1480000" />
       <workItem from="1701590978809" duration="1832000" />
       <workItem from="1701592891744" duration="23000" />
-      <workItem from="1701592961081" duration="240000" />
+      <workItem from="1701592961081" duration="1972000" />
     </task>
     <servers />
   </component>
